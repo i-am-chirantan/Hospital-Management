@@ -3,40 +3,55 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Title</title>
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/commonstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/98330ec535.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="navigation">
-        <ul>
-            <h1 id="title">Website Title</h1>
-            <li id="home"><a href="index.html">Home</a></li>
-            <li id="button">Button
+        <div id="heading">
+            Hospital Management System
+        </div>
+        <div class="clickables">
+            <div class="top-icon" id="home">
+                <a class="top-icon-link" href="./index.html">Home</a>
+            </div>
+            <div class="top-icon" id="button">Button
                 <!--</i>-->
                 <div class="dropdown">
                     <ul>
                     </ul>
                 </div>
-            </li>
-            <li id="about"><a href="about.html">About</a></li>
-            <li id="Login"><a href="login.html">Login/Sign Up</a></li>
-        </ul>
+            </div>
+            <div class="top-icon" id="about"><a class="top-icon-link" href="about.html">About</a></div>
+            <div class="top-icon" id="Login"><a class="top-icon-link" href="login.html">Login/Sign Up</a></div>
+        </div>
     </div>
-
     <div id="main">
         <div id="top_bar">
-            <div id="emergency"><a href="">BOOK WARD AMBULENCE</a></div>
-            <div id="search1">
-                <ul>
-                    <li><i class="fa fa-search search_button" style="font-size: 18px;"></i></li>
-                    <li><input class="search_box" type="text" placeholder="" name="search"></li>
+            <div id="emergency"><a href="#">BOOK WARD AMBULANCE</a>
+            </div>
+            <div id="search1" class="input-icons">
+                <ul class="search">
+                    <li>
+                        <i class="fa fa-solid fa-magnifying-glass icon"></i>
+                        <input class="search_box" type="text" placeholder="Enter your Address" name="search">
+                    </li>
                 </ul>
             </div>
-            <div id="search2">
-                <ul>
-                    <li><i class="fa fa-search search_button" style="font-size: 18px;"></i></li>
-                    <li><input class="search_box" type="text" placeholder="" name="search"></li>
+            <div id="search2" class="input-icons">
+                <ul class="search">
+                    <li>
+                        <i class="fa fa-solid fa-magnifying-glass icon"></i>
+                        <input class="search_box" type="text" placeholder="Enter Location of Hospital" name="search">
+                    </li>
                 </ul>
             </div>
         </div>

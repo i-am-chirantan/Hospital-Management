@@ -1,72 +1,73 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="master.css">
-  <title>Login Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
 </head>
 
 <body>
-  <div class="blur"></div>
-  <div class="contenar">
-    <div class="form-box">
-      <div class="button-box">
-        <div id="btn"></div>
-        <button type="button" name="button" class="toggle-btn" onclick="login()"><b>Log In</b></button>
-        <button type="button" name="button" class="toggle-btn" onclick="register()"><b>Register</b></button>
-        <!-- <button type="button" name="button" class="toggle-btn" onclick="forgot()"><b>Forgot Password</b></button> -->
-      </div>
-      <div class="social-icon">
-        <img src="img/fb.png">
-        <img src="img/gp.png">
-        <img src="img/tw.png">
-      </div>
+    <div class="blur"></div>
+    <div class="contenar">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" name="button" class="toggle-btn" onclick="login()"><b>Log In</b></button>
+                <button type="button" name="button" class="toggle-btn" onclick="register()"><b>Register</b></button>
+                <!-- <button type="button" name="button" class="toggle-btn" onclick="forgot()"><b>Forgot Password</b></button> -->
+            </div>
+            <div class="social-icon">
+                <img src="img/fb.png">
+                <img src="img/gp.png">
+                <img src="img/tw.png">
+            </div>
 
-      <form class="input-group" id="login">
-        <input type="text" class="input-field" placeholder="Email Id / Phone No" required>
-        <input type="password" class="input-field" placeholder="Password" required>
-        <input type="checkbox" class="chech-box"><samp>Rememder Password</samp>
-        <button type="button" class="submit-btn">Login</button><br>
-        <button type="button" class="submit-btn">Forgot Password</button>
-      </form>
-      <form class="input-group" id="register">
-        <input type="text" class="input-field" placeholder="User Name*" required>
-        <input type="tel" class="input-field" placeholder="Phone No*" required>
-        <input type="email" class="input-field" placeholder="Email Id*" required>
-        <input type="password" class="input-field" placeholder="Password*" required>
-        <input type="checkbox" class="chech-box"><samp>I agree to the terms & condition**</samp>
-        <button type="button" class="submit-btn">Sign up</button>
-      </form>
+            <form class="input-group" id="login">
+                <input type="text" class="input-field" placeholder="Email Id / Phone No" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="chech-box"><samp>Rememder Password</samp>
+                <button type="button" class="submit-btn">Login</button><br>
+                <button type="button" class="submit-btn">Forgot Password</button>
+            </form>
+            <form class="input-group" id="register">
+                <input type="text" class="input-field" placeholder="User Name*" required>
+                <input type="tel" class="input-field" placeholder="Phone No*" required>
+                <input type="email" class="input-field" placeholder="Email Id*" required>
+                <input type="password" class="input-field" placeholder="Password*" required>
+                <input type="checkbox" class="chech-box"><samp>I agree to the terms & condition**</samp>
+                <button type="button" class="submit-btn">Sign up</button>
+            </form>
 
-      <!-- <form class="input-group" id="forgot">
+            <!-- <form class="input-group" id="forgot">
         <p>
 
         </p>
         <input type="email" class="input-forgot" placeholder="Enter Your Register Email Id">
         <button type="button" class="submit-btn">Submit</button>
       </form> -->
+        </div>
     </div>
-  </div>
 
-  <script>
-    var a = document.getElementById("login");
-    var b = document.getElementById("register");
-    // var c = document.getElementById("Forgot");
-    var d = document.getElementById("btn");
+    <script>
+        var a = document.getElementById("login");
+        var b = document.getElementById("register");
+        var c = document.getElementById("Forgot");
+        var d = document.getElementById("btn");
 
-    function register() {
-      a.style.left = "-400px";
-      b.style.left = "55px";
-      d.style.left = "110px";
-    }
+        function register() {
+            a.style.left = "-400px";
+            b.style.left = "55px";
+            d.style.left = "110px";
+        }
 
-    function login() {
-      a.style.left = "55px";
-      b.style.left = "455px";
-      d.style.left = "0px";
-    }
-  </script>
+        function login() {
+            a.style.left = "55px";
+            b.style.left = "455px";
+            d.style.left = "0px";
+        }
+    </script>
 </body>
 
 </html>
