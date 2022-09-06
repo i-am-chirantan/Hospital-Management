@@ -1,0 +1,11 @@
+#emergency a {
+    background-color: #ff0000;
+    color: #fff;
+    width: max-content;
+    padding: 11px;
+    border-radius: 15px;
+    text-decoration: none;
+    font: 14px 'Comfortaa';
+    font-weight: bolder;
+    word-spacing: 3px;
+}
