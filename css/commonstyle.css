@@ -57,7 +57,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 ul.search {
@@ -81,7 +81,7 @@ ul.search {
 .search_box {
     width: 100%;
     height: 100%;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #f6c4c4aa;
     border-radius: 15px;
     padding: 11px 40px 11px 40px;
     text-align: center;
@@ -89,7 +89,8 @@ ul.search {
     font-family: 'Comfortaa', cursive;
     font-weight: bold;
     word-spacing: 1px;
-    background-color: #f0d297;
+    color: rgb(79, 93, 215);
+    background-color: #fff1d5bf;
 }
 
 input[type="text"]::placeholder {
