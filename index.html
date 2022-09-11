@@ -12,6 +12,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/98330ec535.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function drop(){
+            document.getElementById("drop1").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+            if (!event.target.matches('#emergencyHead')) {
+                var dropdowns = document.getElementsByClassName("dropDown");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -30,13 +47,23 @@
                     </ul>
                 </div>
             </div>
-            <div class="top-icon" id="about"><a class="top-icon-link" href="about.html">About</a></div>
-            <div class="top-icon" id="Login"><a class="top-icon-link" href="login.html">Login/Sign Up</a></div>
+            <div class="top-icon" id="about"><a class="top-icon-link" href="html/about.html">About</a></div>
+            <div class="top-icon" id="Login"><a class="top-icon-link" href="html/login.html">Login/Sign Up</a></div>
         </div>
     </div>
     <div id="main">
         <div id="top_bar">
-            <div id="emergency"><a href="#">BOOK WARD AMBULANCE</a>
+            <div id="emergency">
+                <a onclick="drop()" id="emergencyHead" href="#">BOOK WARD AMBULANCE</a>
+                <div id="drop1" class="dropDown">
+                    <ul>
+                        <li><a href="" class="dropdownContent">Type 1 Ambulence</a></li>
+                        <li><a href="" class="dropdownContent">Type 2 Ambulence</a></li>
+                        <li><a href="" class="dropdownContent">Type 3 Ambulence</a></li>
+                        <li><a href="" class="dropdownContent">Type 4 Ambulence</a></li>
+                        <li><a href="" class="dropdownContent">Type 5 Ambulence</a></li>
+                    </ul>
+                </div>
             </div>
             <div id="search1" class="input-icons">
                 <ul class="search">
