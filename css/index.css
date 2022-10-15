@@ -1,4 +1,9 @@
-#emergencyHead{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#emergencyHead {
     color: #fff;
     padding: 11px;
     text-decoration: none;
@@ -6,6 +11,7 @@
     font-weight: bolder;
     word-spacing: 3px;
 }
+
 #emergency {
     position: relative;
     display: inline-block;
@@ -14,27 +20,36 @@
     border-radius: 15px;
     padding: 11px 0px 11px 0px;
 }
+
 .dropDown {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     width: 218px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 15px 15px;
     border-style: none solid solid;
     border-width: 1px;
     border-color: black;
     z-index: 1;
 }
+
 .dropdownContent {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
-.dropDown ul{
+
+.dropDown ul {
     list-style: none;
 }
-.dropdownContent:hover {background-color: #ddd;}
-.show {display:block;}
+
+.dropdownContent:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
